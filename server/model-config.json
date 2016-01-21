@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "dev"
+  },
+  "AccessToken": {
+    "dataSource": "dev",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "dev",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "dev",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "dev",
+    "public": false
+  },
+  "blog": {
+    "dataSource": "dev",
+    "public": true
+  },
+  "post": {
+    "dataSource": "dev",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "dev",
+    "public": true
+  },
+  "topic": {
+    "dataSource": "dev",
+    "public": true
+  },
+  "tag": {
+    "dataSource": "dev",
+    "public": true
+  }
+}

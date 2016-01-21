@@ -1,0 +1,53 @@
+{
+  "name": "post",
+  "plural": "posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "commentsAllowed": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "topic": {
+      "type": "belongsTo",
+      "model": "topic",
+      "foreignKey": ""
+    },
+    "tags": {
+      "type": "hasAndBelongsToMany",
+      "model": "tag",
+      "foreignKey": ""
+    },
+    "blog": {
+      "type": "belongsTo",
+      "model": "blog",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
