@@ -11,12 +11,24 @@
       "type": "string",
       "required": true
     },
+    "icon": {
+        "type": "string",
+        "required": true
+    },
+    "thumb": {
+        "type": "string",
+        "required": false
+    },
     "content": {
       "type": "string",
       "required": true
     },
     "commentsAllowed": {
       "type": "boolean",
+      "required": true
+    },
+    "date": {
+      "type": "date",
       "required": true
     }
   },
